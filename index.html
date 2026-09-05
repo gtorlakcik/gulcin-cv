@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gülçin Torlakcık | CV</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: white;
+            color: #222;
+            overflow: hidden;
+        }
+
+
+        /* =========================
+           ANA ALAN
+        ========================= */
+
+        .ana-sayfa {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+
+        /* =========================
+           BAŞLIK
+        ========================= */
+
+        header {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        h1 {
+            margin: 0 0 8px;
+            font-size: 42px;
+        }
+
+        .unvan {
+            color: #666;
+            font-size: 18px;
+        }
+
+
+        /* =========================
+           ORTA ÇALIŞMA ALANI
+        ========================= */
+
+        .sahne {
+
+            position: absolute;
+
+            width: 900px;
+            height: 560px;
+
+            left: 50%;
+            top: 125px;
+
+            transform: translateX(-50%);
+        }
+
+
+        /* =========================
+           FOTOĞRAF
+        ========================= */
+
+        .foto-alani {
+
+            position: absolute;
+
+            width: 220px;
+            height: 220px;
+
+            left: 50%;
+            top: 135px;
+
+            transform: translateX(-50%);
+        }
+
+
+        .foto-cerceve {
+
+            width: 100%;
+            height: 100%;
+
+            border-radius: 50%;
+
+            border: 3px solid #4b515a;
+
+            overflow: hidden;
+
+            background: white;
+        }
+
+
+        .foto-cerceve img {
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        /* =========================
+           BUTONLAR
+        ========================= */
+
+        .buton {
+
+            position: absolute;
+
+            display: block;
+
+            text-decoration: none;
+
+            color: white;
+
+            background: #333b48;
+
+            padding: 15px 28px;
+
+            border-radius: 30px;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+            white-space: nowrap;
+
+            cursor: pointer;
+
+            transition: 0.25s;
+        }
+
+
+        .buton:hover {
+
+            background: #555e69;
+
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           HAKKIMDA
+           FOTOĞRAFIN ÜSTÜ
+        ========================= */
+
+        .hakkimda {
+
+            left: 50%;
+            top: 35px;
+
+            transform: translateX(-50%);
+        }
+
+
+        .hakkimda:hover {
+
+            transform: translateX(-50%) scale(1.05);
+        }
+
+
+        /* =========================
+           DENEYİMLERİM
+           FOTOĞRAFIN SOLU
+        ========================= */
+
+        .deneyimler {
+
+            left: 35px;
+            top: 215px;
+
+            transform: translateY(-50%);
+        }
+
+
+        .deneyimler:hover {
+
+            transform: translateY(-50%) scale(1.05);
+        }
+
+
+        /* =========================
+           PROGRAMLAR
+           FOTOĞRAFIN SAĞI
+        ========================= */
+
+        .programlar {
+
+            right: 35px;
+            top: 215px;
+
+            transform: translateY(-50%);
+        }
+
+
+        .programlar:hover {
+
+            transform: translateY(-50%) scale(1.05);
+        }
+
+
+        /* =========================
+           EĞİTİMİM
+           FOTOĞRAFIN ALTINDA
+        ========================= */
+
+        .egitim {
+
+            left: 50%;
+            top: 375px;
+
+            transform: translateX(-50%);
+        }
+
+
+        .egitim:hover {
+
+            transform: translateX(-50%) scale(1.05);
+        }
+
+
+        /* =========================
+           YAPABİLECEKLERİM
+        ========================= */
+
+        .size-ne-katabilirim {
+
+            left: 50%;
+            top: 455px;
+
+            transform: translateX(-50%);
+        }
+
+
+        .size-ne-katabilirim:hover {
+
+            transform: translateX(-50%) scale(1.05);
+        }
+
+
+        /* =========================
+           KÜÇÜK EKRAN
+        ========================= */
+
+        @media (max-width: 950px) {
+
+            .sahne {
+                width: 100%;
+            }
+
+            .deneyimler {
+                left: 5%;
+            }
+
+            .programlar {
+                right: 5%;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            html,
+            body {
+                overflow: auto;
+            }
+
+            .ana-sayfa {
+                min-height: 800px;
+                height: auto;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .unvan {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+
+            .sahne {
+                position: relative;
+
+                top: 0;
+                left: 0;
+
+                transform: none;
+
+                height: 650px;
+
+                margin-top: 10px;
+            }
+
+            .foto-alani {
+                width: 190px;
+                height: 190px;
+
+                top: 150px;
+            }
+
+            .hakkimda {
+                top: 35px;
+            }
+
+            .deneyimler {
+                left: 10px;
+                top: 240px;
+            }
+
+            .programlar {
+                right: 10px;
+                top: 240px;
+            }
+
+            .egitim {
+                top: 370px;
+            }
+
+            .size-ne-katabilirim {
+                top: 450px;
+            }
+
+            .buton {
+                font-size: 15px;
+                padding: 12px 20px;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="ana-sayfa">
+
+
+        <!-- BAŞLIK -->
+
+        <header>
+
+            <h1>Gülçin Torlakcık</h1>
+
+            <div class="unvan">
+                Halkla İlişkiler ve Reklam |
+                Yaratıcı İçerik |
+                Dijital Tasarım
+            </div>
+
+        </header>
+
+
+        <!-- ORTA ALAN -->
+
+        <div class="sahne">
+
+
+            <!-- HAKKIMDA -->
+
+            <a
+                href="hakkimda.html"
+                class="buton hakkimda"
+                onmouseenter="bakis('images/bakis_yukari.png')"
+                onmouseleave="bakis('images/bakis_duz.png')">
+
+                Hakkımda
+
+            </a>
+
+
+            <!-- DENEYİMLERİM -->
+
+            <a
+                href="deneyimler.html"
+                class="buton deneyimler"
+                onmouseenter="bakis('images/bakis_sol.png')"
+                onmouseleave="bakis('images/bakis_duz.png')">
+
+                Deneyimlerim
+
+            </a>
+
+
+            <!-- PROGRAMLAR -->
+
+            <a
+                href="programlar.html"
+                class="buton programlar"
+                onmouseenter="bakis('images/bakis_sag.png')"
+                onmouseleave="bakis('images/bakis_duz.png')">
+
+                Programlar
+
+            </a>
+
+
+            <!-- EĞİTİM -->
+
+            <a
+                href="egitim.html"
+                class="buton egitim"
+                onmouseenter="bakis('images/bakis_asagi.png')"
+                onmouseleave="bakis('images/bakis_duz.png')">
+
+                Eğitimim
+
+            </a>
+
+
+            <!-- YAPABİLECEKLERİM -->
+
+            <a
+                href="size-ne-katabilirim.html"
+                class="buton size-ne-katabilirim"
+                onmouseenter="bakis('images/goz_kirpma.png')"
+                onmouseleave="bakis('images/bakis_duz.png')">
+
+                Size Ne Katabilirim?
+
+            </a>
+
+
+            <!-- FOTOĞRAF -->
+
+            <div class="foto-alani">
+
+                <div class="foto-cerceve">
+
+                    <img
+                        id="profilFoto"
+                        src="images/bakis_duz.png"
+                        alt="Gülçin">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <!-- BAKIŞ DEĞİŞTİRME -->
+
+    <script>
+
+        function bakis(resim) {
+
+            document.getElementById("profilFoto").src = resim;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

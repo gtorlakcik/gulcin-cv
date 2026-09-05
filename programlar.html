@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Program Deneyimlerim - Gülçin Torlakcık</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f5f6;
+            color: #2f343a;
+        }
+
+        .sayfa {
+            width: 90%;
+            max-width: 900px;
+            min-height: 600px;
+            margin: 50px auto;
+            padding: 50px;
+            background: white;
+            border-radius: 25px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .alt-baslik {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .program-listesi {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .program {
+            padding: 25px;
+            background: #f1f2f3;
+            border-radius: 18px;
+            border-left: 5px solid #4b515a;
+            transition: 0.3s;
+        }
+
+        .program:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 18px rgba(0,0,0,0.10);
+        }
+
+        .program h2 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+        }
+
+        .seviye {
+            margin: 0;
+            font-size: 17px;
+            color: #555;
+        }
+
+        .geri-don {
+            display: block;
+            width: fit-content;
+            margin: 45px auto 0;
+            padding: 13px 25px;
+            background: #4b515a;
+            color: white;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .geri-don:hover {
+            background: #30343a;
+        }
+
+        @media (max-width: 650px) {
+
+            .sayfa {
+                width: 94%;
+                padding: 30px 20px;
+                margin: 25px auto;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .program-listesi {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sayfa">
+
+        <h1>Program Deneyimlerim</h1>
+
+        <p class="alt-baslik">
+            Kullandığım programlar ve deneyim seviyelerim
+        </p>
+
+        <div class="program-listesi">
+
+            <div class="program">
+                <h2>Microsoft Office</h2>
+                <p class="seviye">İyi</p>
+            </div>
+
+            <div class="program">
+                <h2>Adobe After Effects</h2>
+                <p class="seviye">İyi</p>
+            </div>
+
+            <div class="program">
+                <h2>Adobe Premiere Pro</h2>
+                <p class="seviye">İyi</p>
+            </div>
+
+            <div class="program">
+                <h2>Discreet Combustion</h2>
+                <p class="seviye">Orta</p>
+            </div>
+
+            <div class="program">
+                <h2>Canva</h2>
+                <p class="seviye">İyi</p>
+            </div>
+
+            <div class="program">
+                <h2>Visual Studio Code</h2>
+                <p class="seviye">Orta</p>
+            </div>
+
+        </div>
+
+        <a href="index.html" class="geri-don">
+            ← Ana Sayfaya Dön
+        </a>
+
+    </div>
+
+</body>
+</html>
