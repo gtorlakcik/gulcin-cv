@@ -44,13 +44,37 @@ header {
     padding-top: 30px;
 }
 
-h1 {
-    margin: 0 0 8px;
+.baslik-satiri {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.baslik-satiri h1 {
+    margin: 0;
     font-size: 42px;
+    font-weight: 600;
+    color: #333b48;
+}
+
+.baslik-pati {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+    display: block;
+}
+
+.baslik-kalp {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: block;
 }
 
 .unvan {
-    color: #666;
+    margin-top: 8px;
+    color: #777;
     font-size: 18px;
 }
 
@@ -68,15 +92,30 @@ h1 {
 }
 
 /* =========================
+   ÇOCUKLAR
+========================= */
+
+.cocuklar {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    left: 50%;
+    top: -5px;
+    transform: translateX(-50%);
+    display: block;
+    z-index: 1;
+}
+
+/* =========================
    FOTOĞRAF
 ========================= */
 
 .foto-alani {
     position: absolute;
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     left: 50%;
-    top: 135px;
+    top: 130px;
     transform: translateX(-50%);
 }
 
@@ -126,7 +165,7 @@ h1 {
 
 .hakkimda {
     left: 50%;
-    top: 35px;
+    top: 65px;
     transform: translateX(-50%);
 }
 
@@ -139,7 +178,7 @@ h1 {
 ========================= */
 
 .deneyimler {
-    left: 35px;
+    left: 150px;
     top: 215px;
     transform: translateY(-50%);
 }
@@ -153,7 +192,7 @@ h1 {
 ========================= */
 
 .programlar {
-    right: 35px;
+    right: 165px;
     top: 215px;
     transform: translateY(-50%);
 }
@@ -168,7 +207,7 @@ h1 {
 
 .egitim {
     left: 50%;
-    top: 375px;
+    top: 340px;
     transform: translateX(-50%);
 }
 
@@ -177,12 +216,55 @@ h1 {
 }
 
 /* =========================
+   KEDİ
+========================= */
+
+.kedi {
+    position: absolute;
+    width: 85px;
+    height: auto;
+    left: 50%;
+    top: 393px;
+    transform: translateX(-50%);
+    display: block;
+}
+
+/* =========================
+   NOT DEFTERİ
+========================= */
+
+.not-defteri {
+    position: absolute;
+    width: 270px;
+    height: auto;
+    left: 45px;
+    bottom: 15px;
+    display: block;
+    z-index: 1;
+}
+
+/* =========================
+   KALEM
+========================= */
+
+.kalem {
+    position: fixed;
+    width: 160px;
+    height: auto;
+    right: 170px;
+    bottom: 20px;
+    display: block;
+    z-index: 5;
+    pointer-events: none;
+}
+
+/* =========================
    SIZE NE KATABİLİRİM?
 ========================= */
 
 .size-ne-katabilirim {
     left: 50%;
-    top: 455px;
+    top: 447px;
     transform: translateX(-50%);
 }
 
@@ -229,22 +311,43 @@ h1 {
         height: auto;
     }
 
+    /* =========================
+       TELEFON BAŞLIĞI
+    ========================= */
+
     header {
         padding-top: 25px;
     }
 
-    h1 {
+    .baslik-satiri {
+        gap: 8px;
+    }
+
+    .baslik-satiri h1 {
         font-size: 30px;
-        margin-bottom: 8px;
+        font-weight: 600;
+    }
+
+    .baslik-pati {
+        width: 32px;
+        height: 32px;
+    }
+
+    .baslik-kalp {
+        width: 29px;
+        height: 29px;
     }
 
     .unvan {
         font-size: 14px;
         line-height: 20px;
         padding: 0 20px;
+        margin-top: 6px;
     }
 
-    /* Telefon sahnesi */
+    /* =========================
+       TELEFON SAHNESİ
+    ========================= */
 
     .sahne {
         position: relative;
@@ -254,6 +357,13 @@ h1 {
         top: 0;
         transform: none;
         margin-top: 5px;
+    }
+
+    /* Çocuklar */
+
+    .cocuklar {
+        width: 100px;
+        top: 0;
     }
 
     /* Hakkımda */
@@ -280,7 +390,7 @@ h1 {
         transform: translateX(-50%);
     }
 
-    /* Yan butonlar artık fotoğrafın üzerine binmiyor */
+    /* Yan butonlar */
 
     .deneyimler {
         left: 10px;
@@ -295,7 +405,7 @@ h1 {
     }
 
     .programlar {
-        right: 10px;
+        right: 5px;
         top: 295px;
         transform: none;
         font-size: 13px;
@@ -320,11 +430,34 @@ h1 {
         transform: translateX(-50%) scale(1.05);
     }
 
+    /* Kedi */
+
+    .kedi {
+        width: 48px;
+        top: 410px;
+    }
+
+    /* Not Defteri */
+
+    .not-defteri {
+        width: 110px;
+        left: 8px;
+        bottom: 10px;
+    }
+
+    /* Kalem */
+
+    .kalem {
+        width: 115px;
+        right: 8px;
+        bottom: 15px;
+    }
+
     /* Size Ne Katabilirim */
 
     .size-ne-katabilirim {
         left: 50%;
-        top: 440px;
+        top: 460px;
         transform: translateX(-50%);
         font-size: 14px;
         padding: 12px 18px;
@@ -333,6 +466,7 @@ h1 {
     .size-ne-katabilirim:hover {
         transform: translateX(-50%) scale(1.05);
     }
+
 }
 
 </style>
@@ -343,11 +477,29 @@ h1 {
 
 <div class="ana-sayfa">
 
-    <!-- BAŞLIK -->
+    <!-- =========================
+         BAŞLIK
+    ========================= -->
 
     <header>
 
-        <h1>Gülçin Torlakcık</h1>
+        <div class="baslik-satiri">
+
+            <img
+                src="images/Pati.png"
+                alt="Pati"
+                class="baslik-pati"
+            >
+
+            <h1>Gülçin Torlakcık</h1>
+
+            <img
+                src="images/kalp.png"
+                alt="Kalp"
+                class="baslik-kalp"
+            >
+
+        </div>
 
         <div class="unvan">
             Halkla İlişkiler ve Reklam |
@@ -358,9 +510,20 @@ h1 {
     </header>
 
 
-    <!-- ORTA ALAN -->
+    <!-- =========================
+         ORTA ALAN
+    ========================= -->
 
     <div class="sahne">
+
+
+        <!-- ÇOCUKLAR -->
+
+        <img
+            src="images/cocuklar.jpeg"
+            alt="Çocuklar"
+            class="cocuklar"
+        >
 
 
         <!-- HAKKIMDA -->
@@ -411,18 +574,6 @@ h1 {
         </a>
 
 
-        <!-- SIZE NE KATABİLİRİM? -->
-
-        <a
-            href="size-ne-katabilirim.html"
-            class="buton size-ne-katabilirim"
-            onmouseenter="bakis('images/goz_kirpma.png')"
-            onmouseleave="bakis('images/bakis_duz.png')"
-        >
-            Size Ne Katabilirim?
-        </a>
-
-
         <!-- FOTOĞRAF -->
 
         <div class="foto-alani">
@@ -439,12 +590,54 @@ h1 {
 
         </div>
 
+
+        <!-- NOT DEFTERİ -->
+
+        <img
+            src="images/not defteri.png"
+            alt="Not Defteri"
+            class="not-defteri"
+        >
+
+
+        <!-- KALEM -->
+
+        <img
+            src="images/kalem.png"
+            alt="Kalem"
+            class="kalem"
+        >
+
+
+        <!-- KEDİ -->
+
+        <img
+            src="images/kedi.jpeg"
+            alt="Kedi"
+            class="kedi"
+        >
+
+
+        <!-- SIZE NE KATABİLİRİM? -->
+
+        <a
+            href="size-ne-katabilirim.html"
+            class="buton size-ne-katabilirim"
+            onmouseenter="bakis('images/goz_kirpma.png')"
+            onmouseleave="bakis('images/bakis_duz.png')"
+        >
+            Size Ne Katabilirim?
+        </a>
+
+
     </div>
 
 </div>
 
 
-<!-- BAKIŞ DEĞİŞTİRME -->
+<!-- =========================
+     BAKIŞ DEĞİŞTİRME
+========================= -->
 
 <script>
 
